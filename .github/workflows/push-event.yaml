@@ -1,0 +1,11 @@
+name: new push workflow
+on:
+  pull_request:
+    types:
+      - opened
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: echo "Deploying"
