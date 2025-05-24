@@ -3,6 +3,12 @@ on:
   pull_request:
     types:
       - opened
+    branches:
+      - main
+      - 'dev-*' # dev-new, dev-this-is-new
+      
+  workflow_dispatch:
+
 jobs:
   first-job:
     runs-on: ubuntu-latest
